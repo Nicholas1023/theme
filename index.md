@@ -1,5 +1,6 @@
 ---
 title: Home
+layout: default
 ---
 
 # Nicholas1023's Theme
