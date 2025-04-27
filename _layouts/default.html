@@ -7,14 +7,14 @@
                 {{ content }}
             </div>
         </main>
-        <nav>
+        <footer>
             <ul id="navigation">
-                <li>Contents: </li>
+                <li>On this page: </li>
             </ul>
-        </nav>     
+        </footer>     
         <script>
             document.addEventListener('DOMContentLoaded', function () {
-                const headers = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+                const headers = document.querySelectorAll('h2, h3, h4, h5, h6');
                 headers.forEach(function(header) {
                     if (header.id) {
                         const headerText = document.createElement("li");
