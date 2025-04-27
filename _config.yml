@@ -1,5 +1,5 @@
-title: tonic-starter
-description: ""
+title: "Nicholas1023's Theme"
+description: "A simple light mode theme created for documenting my projects."
 encoding: utf-8
 
 exclude: ["README.md", "LICENSE", "*.gem", "*.gemspec", "Gemfile.lock"]
