@@ -3,9 +3,29 @@
     {% include head.html %}
     <body>
         <main>
-            <div class="content">
+            <div class="maincontent">
                 {{ content }}
             </div>
         </main>
-    </body>
+        <nav>
+            <ul id="navigation">
+                <li>Contents: </li>
+            </ul>
+        </nav>     
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const headers = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+                headers.forEach(function(header) {
+                    if (header.id) {
+                        const headerText = document.createElement("li");
+                        const headerLink = document.createElement("a");
+                        headerLink.href = `/#${header.id}`;
+                        headerLink.textContent = header.textContent;
+                        headerText.appendChild(headerLink);
+                        document.getElementById("navigation").appendChild(headerText);
+                    }
+                });
+            });
+        </script>
+    </body>        
 </html>
