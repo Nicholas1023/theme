@@ -13,28 +13,6 @@
                 <li>On this page: </li>
             </ul>
         </footer>     
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const headers = document.querySelectorAll('h2, h3, h4, h5, h6');
-                headers.forEach(function(header) {
-                    if (header.id) {
-                        const headerText = document.createElement("li");
-                        const headerLink = document.createElement("a");
-                        headerLink.href = `/#${header.id}`;
-                        headerLink.textContent = header.textContent;
-                        headerText.appendChild(headerLink);
-                        document.getElementById("navigation").appendChild(headerText);
-                    }
-                });
-
-                const pageName = document.querySelector('h1');
-                if (pageName.textContent) {
-                    const siteTitle = document.createElement("a");
-                    siteTitle.textContent = pageName.textContent;
-                    siteTitle.href = "/#";
-                    document.getElementById("topNav").appendChild(siteTitle);
-                }
-            });
-        </script>
+        {% include script.html %}
     </body>        
 </html>
