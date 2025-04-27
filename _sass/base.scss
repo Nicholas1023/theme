@@ -33,6 +33,7 @@ nav {
   width: 100dvw;
   display: flex;
   align-items: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -40,7 +41,6 @@ nav ul {
 }
 
 nav li {
-  list-style: none;
   float: left;
   padding: 5px;
 }
