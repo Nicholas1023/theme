@@ -6,7 +6,8 @@ html, body, main {
 
 body {
   background: linear-gradient(45deg, #d1e9fd, #edf4fa);
-  height: calc(100dvh - 10px);
+  height: calc(100dvh - 70px);
+  padding-top: 40px;
   }
 
 main {
@@ -20,7 +21,7 @@ main {
   margin: auto;
   max-width: 100ch;
   color: #000;
-  min-height: calc(100dvh - 90px);
+  min-height: calc(100dvh - 120px);
 }
 
 main * {
@@ -40,7 +41,7 @@ footer {
   width: 100dvw;
   display: flex;
   align-items: center;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
 
 footer ul {
@@ -60,4 +61,30 @@ a {
 a:hover {
   color: #00bfff;
   text-decoration: underline;
+}
+
+nav {
+  display: flex;
+  background-color: #d1e9fd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  align-items: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  color: black;
+}
+
+nav a {
+  padding: 10px;
+  font-weight: bold;
+  font-size: large;
+  padding-left: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  color: black;
 }

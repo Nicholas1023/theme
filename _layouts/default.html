@@ -2,6 +2,7 @@
 <html>
     {% include head.html %}
     <body>
+        <nav id="topNav"></nav>
         <main>
             <div class="maincontent">
                 {{ content }}
@@ -25,6 +26,14 @@
                         document.getElementById("navigation").appendChild(headerText);
                     }
                 });
+
+                const pageName = document.querySelector('h1');
+                if (pageName.textContent) {
+                    const siteTitle = document.createElement("a");
+                    siteTitle.textContent = pageName.textContent;
+                    siteTitle.href = "/#";
+                    document.getElementById("topNav").appendChild(siteTitle);
+                }
             });
         </script>
     </body>        
