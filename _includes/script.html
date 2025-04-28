@@ -20,4 +20,15 @@
             document.getElementById("topNav").appendChild(siteTitle);
         }
     });
+
+    function getNavHeight() {
+        const footer = document.querySelector("#footer");
+        var footerHeight = footer.offsetHeight;
+        const main = document.querySelector("#mainContainer");
+        let newMainHeight = footerHeight * 2;
+        main.style.minHeight = `calc(100dvh - ${newMainHeight}px)`;
+        console.log(newMainHeight);
+    }
+
+    getNavHeight();
 </script>
