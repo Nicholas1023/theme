@@ -9,4 +9,4 @@ layout: default
 ## Functions
 - Dynamic footer bar for navigating Markdown headers
 - Linear gradient background
-- White space for documentation
+- White space for text
