@@ -1,5 +1,5 @@
 title: nicholas1023-theme
-description: "A simple light mode theme for documenting my projects."
+description: "A simple, multi-purpose light mode theme for websites."
 encoding: utf-8
 
 exclude: ["README.md", "LICENSE", "*.gem", "*.gemspec", "Gemfile.lock"]
